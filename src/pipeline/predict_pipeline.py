@@ -1,4 +1,5 @@
 import sys
+import numpy as np
 import pandas as pd
 
 from src.exception import CustomException
@@ -18,10 +19,16 @@ class PredictPipeline:
 
             data_scaled = preprocessor.transform(features)
             prediction = model.predict(data_scaled)
+
+            # Check bounds
+            if prediction < 0:
+                prediction = np.array([0])
+            elif prediction > 100:
+                prediction = np.array([100])
+            
             return prediction
         except Exception as e:
             raise CustomException(e, sys)
-            
 
 
 class CustomData:

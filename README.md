@@ -29,6 +29,7 @@ A web-based application that predicts student performance based on various demog
 ```
 mlproject/
 ├── app.py                  # Main Flask application
+├── artifacts/              # Model artifacts and predictions
 ├── catboost_info/          # CatBoost model information
 ├── logs/                   # Application logs
 ├── notebook/               # Jupyter notebooks for analysis

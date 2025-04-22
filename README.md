@@ -34,7 +34,7 @@ mlproject/
 ├── logs/                   # Application logs
 ├── notebook/               # Jupyter notebooks for analysis
 ├── src/                    # Source code
-├── static/                 # Static files (CSS, JS)
+├── static/                 # Static files (CSS, JS, images)
 ├── templates/              # HTML templates
 ```
 
@@ -67,6 +67,7 @@ The application will be available at `http://localhost:5000`
    - Academic background (parental education, lunch type)
    - Test scores (reading and writing)
 3. Click "Predict" to get the predicted performance score
+![Application Screenshot](static/images/Snapshot_of_home.png)
 
 ## Acknowledgments
 
